@@ -11,13 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'testing action'
-        run: pwd
-      
-      - name: 'testing printing'
-        run: echo mohamed
-
       - uses: actions/checkout@v3
+      - name: "login to docker"
+        run: docker login --username mbassem999 --password dckr_pat_j6pXeILicjrDWPch3vl1ylp35jk
 
-      - name: 'After'
-        run: ls
